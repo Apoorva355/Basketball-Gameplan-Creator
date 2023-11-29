@@ -9,11 +9,11 @@ function Court(props){
   const[cursorType,SetCursorType] = useState('default');
   //States that manage dragging of the court ENDS
   const initialPuckPositions = [
-    {id:1,pos:{x:0,y:0}},
-    {id:2,pos:{x:0,y:0}},
-    {id:3,pos:{x:0,y:0}},
-    {id:4,pos:{x:0,y:0}},
-    {id:5,pos:{x:0,y:0}},
+    {id:1,pos:{x:70,y:180}},
+    {id:2,pos:{x:70,y:240}},
+    {id:3,pos:{x:70,y:300}},
+    {id:4,pos:{x:70,y:360}},
+    {id:5,pos:{x:70,y:420}},
   ];
 
   function Puck({id, pos,onStop}){
@@ -142,11 +142,11 @@ function Selector(props){
 
 function App() { 
   const [puckPositions,SetPuckPositions] = useState([
-    {id:1,pos:{x:0,y:0}},
-    {id:2,pos:{x:0,y:0}},
-    {id:3,pos:{x:0,y:0}},
-    {id:4,pos:{x:0,y:0}},
-    {id:5,pos:{x:0,y:0}},
+    {id:1,pos:{x:70,y:180}},
+    {id:2,pos:{x:70,y:240}},
+    {id:3,pos:{x:70,y:300}},
+    {id:4,pos:{x:70,y:360}},
+    {id:5,pos:{x:70,y:420}},
   ]);
 
   const [presetPuckPositions, setPresetPuckPositions] = useState([
@@ -168,7 +168,10 @@ function App() {
 
   return (
     <>
+    <div className='site-name'>
     <h1 className='title'>Play-Maker</h1>
+    <div className='logo'><img className='logo-img' src='basketball_Clipboard.png'></img></div>
+    </div>
     <Selector>
       <DropdownMenu pos={presetPuckPositions} ifunc={SetPuckPositions}/>
     </Selector>

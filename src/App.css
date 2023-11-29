@@ -12,10 +12,6 @@
   z-index: 1;
 }
 
-.title{
-  text-align: center;
-}
-
 .puck{
   position:absolute;
   /* top: 50%; */
@@ -215,4 +211,38 @@ img,
 .save-btn:active{
   transform: translateY(3px);
   box-shadow: none;
+}
+
+.site-name{
+  display: flex;
+  position: relative;
+  left: 25%;
+  width:50%;
+  height:10%;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.logo{
+  width:10%;
+  padding-left: 1em;
+}
+.logo-img{
+  width: 100%;
+  height:100%;
+}
+.title{
+  text-align: center;
+  font-style: italic;
+  transition: 700ms;
+  cursor: default;
+}
+.title:hover{
+  color: rgb(255, 136, 0);
+
+}
+.title:hover .logo-img{
+  transform: translateY(100px);
+
 }
