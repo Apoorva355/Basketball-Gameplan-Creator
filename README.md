@@ -9,7 +9,9 @@ __Current features:__
 
 >Currently, the user can make formations and save them with custom names for future use.
 
-
+![Court1](./public/vid1.gif)
+![Court2](./public/vid2.gif)
+![Court3](./public/vid3.gif)
 
 __Further features down the road:__
 
