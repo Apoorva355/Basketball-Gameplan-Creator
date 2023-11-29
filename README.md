@@ -1,5 +1,6 @@
 # ___Play-Maker___
 <img src="./public/Basketball_Clipboard.png" alt="Logo" width="200"/>
+
 #### A Basketball Gameplan Creator
 ---
 __What is this web app about?__
